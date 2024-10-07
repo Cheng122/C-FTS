@@ -27,8 +27,27 @@ Make sure you have the following dependencies installed:
 
 
 
-## Training 
-Updating...
+## Training and testing
+
+### Human 3.6M
+For the training stage, please run:
+```bash
+python run_human36M.py -f 9 -b 128  --train 1 --layers 6 -s 3 --num_coeff_Time_kept 3 --model_downsample_rate 8 -c "human3.6M-model"
+```
+For the testing stage, please run:
+```bash
+python run_human36M.py -f 9 -b 128  --train 0 --layers 6 -s 1 --num_coeff_Time_kept 3 --model_downsample_rate 8 -c "human3.6M-model" --reload 1 --previous_dir ./checkpoint/your_best_model.pth
+```
+
+### MPI-INF-3DHP
+For the training stage, please run:
+```bash
+python run_3dhp.py -f 9 -b 128  --train 1 --layers 6 -s 1 --num_coeff_Time_kept 3 --model_downsample_rate 8 -c "3dhp-model"
+```
+For the testing stage, please run:
+```bash
+python run_3dhp.py -f 9 -b 128  --train 0 --layers 6 -s 1 --num_coeff_Time_kept 3 --model_downsample_rate 8 -c "3dhp-model" --reload 1 --previous_dir ./checkpoint/your_best_model.pth
+```
 
 
 ## Evaluation
