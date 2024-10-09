@@ -11,7 +11,11 @@ This is the official implementation of "Monocular Video 3D Human Pose Estimation
 </div>
 
 ## The released codes include:
-Updating...
+    checkpoint/:                        the folder for model weights of C-FTS
+    dataset/:                           the folder for data loader
+    common/:                            the folder for basic functions
+    model/:                             the folder for C-FTS network
+    run_human36M.py and run_3dhp.py:    the python code for C-FTS model training
 
 ## Environment
 Make sure you have the following dependencies installed:
