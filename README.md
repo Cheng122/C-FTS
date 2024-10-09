@@ -53,8 +53,14 @@ python run_3dhp.py -f 9 -b 128  --train 0 --layers 6 -s 1 --num_coeff_Time_kept 
 ## Evaluation
 Updating...
 
-## Inference
-Updating...
+## Inference for the wild videos
+Accroding STCFormer and MHFormer, make sure to download the YOLOv3 and HRNet pretrained models [here](https://drive.google.com/drive/folders/1_ENAMOsPM7FXmdYRbkwbFHgzQq_B_NQA) and put it in the './demo/lib/checkpoint' directory firstly. Then, you need to put your in-the-wild videos in the './demo/video' directory.
+
+You can modify the 'get_pose3D' function in the 'vis.py' script according to your needs, including the checkpoint and model parameters, and then execute the following command:
+
+```bash
+ python demo/vis.py --video sample_video.mp4
+```
 
 ## Citation
 
