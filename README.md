@@ -55,6 +55,8 @@ python run_3dhp.py -f 9 -b 128  --train 0 --layers 6 -s 1 --num_coeff_Time_kept 
 
 
 ## Evaluation
+You can download our pre-trained models from [Google Drive](https://drive.google.com/drive/folders/1kT_5QYnKgHQ5eCkqoX3N1ONztgpjHWTV?usp=sharing). Put them in the ./checkpoint directory.
+
 Updating...
 
 ## Inference for the wild videos
